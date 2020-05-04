@@ -66,7 +66,7 @@ public class LinkedBagCollection<E> implements Bag<E> {
             retVal = false;
         } else {
             Node<E> current = front;
-            while (current != null && current.get().equals(item)) {
+            while (current != null && !current.get().equals(item)) {
                 current = current.prev;
             }
 
