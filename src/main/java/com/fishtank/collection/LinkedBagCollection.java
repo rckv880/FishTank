@@ -132,6 +132,7 @@ public class LinkedBagCollection<E> implements Bag<E> {
             if (arrIndex >= 0) {
                 retVal[arrIndex--] = item;
             }
+            current = current.prev;
         }
 
         return retVal;
